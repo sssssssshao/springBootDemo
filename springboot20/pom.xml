@@ -109,11 +109,12 @@
             <artifactId>pagehelper-spring-boot-starter</artifactId>
             <version>1.2.5</version>
         </dependency>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>common-lang3</artifactId>
-            <version>3.7</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-devtools</artifactId>-->
+            <!--<optional>true</optional>-->
+            <!--<scope>true</scope>-->
+        <!--</dependency>-->
     </dependencies>
 
     <!-- springcloud依赖于springboot实现微服务,springboot默认集成springmvc组件

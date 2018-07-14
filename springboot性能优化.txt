@@ -1,0 +1,9 @@
+一、springboot
+    1.扫包优化 是在启动优化
+        1.1 @SpringBootApplication 缺点：等同于@ComponentScan("com.sfy") + @Configuration + @EnableAutoConfiguration
+            扫包核心：同级包 递归遍历 包下子类 影响到启动项目时间 会到无用包
+
+    2.JVM 参数优化 影响到整体运行吞吐量
+        调优策略：初始化对内存与最大堆相同 减少垃圾回收次数
+    3.默认 Tomcat容器改为Undertow
+    Tomcat 吞吐量 5000 Undertow 8000

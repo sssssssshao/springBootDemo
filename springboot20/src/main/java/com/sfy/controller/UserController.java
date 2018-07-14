@@ -21,4 +21,9 @@ public class UserController {
     public PageInfo<User> list(int page, int pageSize) {
         return userService.findUserList(page, pageSize);
     }
+
+    @RequestMapping("index")
+    public String index(){
+        return "index";
+    }
 }
