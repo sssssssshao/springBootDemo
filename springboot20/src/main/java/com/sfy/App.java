@@ -20,7 +20,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 @SpringBootApplication
 @EnableAsync // 开启异步调用
 //@MapperScan(basePackages = {"com.sfy.mapper", "com.sfy.test01.mapper", "com.sfy.test02.mapper"})
-@EnableConfigurationProperties(value = {JTADBConfig1.class, JTADBConfig2.class})
+//@EnableConfigurationProperties(value = {JTADBConfig1.class, JTADBConfig2.class})
 public class App {
     /**
      * 1.实现注解版本多数据源
