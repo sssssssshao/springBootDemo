@@ -126,6 +126,31 @@
             <!--<optional>true</optional>-->
             <!--<scope>true</scope>-->
         <!--</dependency>-->
+        <!-- actuator监控中心-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-server</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
+        </dependency>
+        <!-- Sprint Boot Actuator对外暴露应用的监控信息，Jolokia 提供使用HTTP 接口获取 json格式的数据-->
+        <dependency>
+            <groupId>org.jolokia</groupId>
+            <artifactId>jolokia-core</artifactId>
+        </dependency>
+        <!-- 将原来本身的1.1.1版本强制改为1.1版本-->
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1</version>
+        </dependency>
     </dependencies>
 
     <!-- springcloud依赖于springboot实现微服务,springboot默认集成springmvc组件
