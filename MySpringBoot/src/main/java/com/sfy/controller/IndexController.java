@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class IndexController {
 
-    @RequestMapping("/index")
+    @RequestMapping(value = "/index", produces = "text/html;charset=UTF-8")
     public String index(){
         return "纯手写SpringBoot已完成!";
     }
