@@ -1,5 +1,5 @@
 手写springmvc 原理分析
-1.创建一个前端控制器()ExtDispatcherServlet拦截所有请求(springmvc基于servlet实现)
+1.创建一个前端控制器()ExtDispatcherServlet   拦截所有请求(springmvc基于servlet实现)
 2.初始化操作重写servlet init 方法
 	2.1 将扫包范围所有的类，注入到springmvc容器里面，存放在Map集合中key为默认类名小写，value对象
 	2.2 将url映射和方法进行关联
