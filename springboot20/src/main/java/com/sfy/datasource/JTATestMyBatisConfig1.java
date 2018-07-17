@@ -1,19 +1,6 @@
 package com.sfy.datasource;
 
 //import com.atomikos.jdbc.AtomikosDataSourceBean;
-import com.mysql.cj.jdbc.MysqlXADataSource;
-import com.sfy.config.JTADBConfig1;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.mybatis.spring.SqlSessionFactoryBean;
-import org.mybatis.spring.SqlSessionTemplate;
-import org.mybatis.spring.annotation.MapperScan;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
-
-import javax.sql.DataSource;
-import java.sql.SQLException;
 
 //@Configuration
 // basePackages 最好分开配置 如果放在同一个文件夹可能会报错

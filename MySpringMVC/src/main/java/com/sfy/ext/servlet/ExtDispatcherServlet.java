@@ -38,7 +38,7 @@ public class ExtDispatcherServlet extends HttpServlet {
     @Override
     public void init() throws ServletException {
         // 1.获取当前包下的所有的类
-        List<Class<?>> classes = ClassUtil.getClasses("com.sfy.controller");
+        List<Class<?>> classes = ClassUtil.getClasses("com.sfy.ext.controller");
         // 2.将扫包范围所有的类，注入到springmvc容器里面，存放在Map集合中key为默认类名小写，value对象
         try {
             findClassMVCAnnotation(classes);

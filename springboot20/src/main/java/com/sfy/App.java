@@ -1,13 +1,7 @@
 package com.sfy;
 
-import com.sfy.config.JTADBConfig1;
-import com.sfy.config.JTADBConfig2;
-import com.sfy.datasource.DataSource1Config;
-import com.sfy.datasource.DataSource2Config;
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.scheduling.annotation.EnableAsync;
 
 /**
@@ -16,7 +10,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
  * 3.springboot2.0之后 spring5.0
  * */
 //@EnableAutoConfiguration
-//@ComponentScan(basePackages = {"com.sfy.controller","com.sfy.order.controller"})
+//@ComponentScan(basePackages = {"com.sfy.ext.controller","com.sfy.order.controller"})
 @SpringBootApplication
 @EnableAsync // 开启异步调用
 //@MapperScan(basePackages = {"com.sfy.mapper", "com.sfy.test01.mapper", "com.sfy.test02.mapper"})

@@ -20,7 +20,7 @@ public class WebLogAspect {
     private static final Logger logger = LoggerFactory.getLogger(WebLogAspect.class);
 
 //    @Pointcut("execution(public * com.sfy.*.*(..))")
-    @Pointcut("execution(public * com.sfy.controller.*.*(..))")
+    @Pointcut("execution(public * com.sfy.ext.controller.*.*(..))")
     public void webLog(){
 
     }
