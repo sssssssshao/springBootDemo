@@ -6,7 +6,8 @@
     <!-- Spring MVC 核心控制器DispatcherServlet 配置 -->
     <servlet>
         <servlet-name>dispatcher</servlet-name>
-        <servlet-class>com.sfy.ext.servlet.ExtDispatcherServlet</servlet-class>
+        <!--<servlet-class>com.sfy.ext.servlet.ExtDispatcherServlet</servlet-class>-->
+        <servlet-class>com.sfy.mine.servlet.MineDispatcherServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
