@@ -13,7 +13,7 @@ import java.io.File;
 public class MineTomcat {
     private static int PORT = 8080;
     private static String CONTEXT_PATH = "/";
-    private static String PATHNAME = "MineSpringBoot/src/main";// MySpringBoot/
+    private static String PATHNAME = "MySpringBoot/src/main";// MySpringBoot/
     private static String CLASSPATHNAME = "target/classes";
     private static String WEBAPPPATH = "/WEB-INF/classes";
 

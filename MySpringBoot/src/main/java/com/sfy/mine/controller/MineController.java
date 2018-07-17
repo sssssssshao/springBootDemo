@@ -14,7 +14,7 @@ public class MineController {
 
     @RequestMapping("/mine")
     public String mine(){
-        return "index";
+        return "pageIndex";
     }
 
     @RequestMapping(value = "/mineService", produces = "text/html;charset=UTF-8")

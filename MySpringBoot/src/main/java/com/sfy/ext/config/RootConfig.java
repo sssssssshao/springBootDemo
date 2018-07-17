@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
  * 其他非springmvc的容器
  */
 @Configuration
-@ComponentScan("com.sfy")
+@ComponentScan("com.sfy.ext")
 public class RootConfig {
 
 }

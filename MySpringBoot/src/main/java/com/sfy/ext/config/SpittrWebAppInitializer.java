@@ -4,12 +4,15 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 
 /**
  * 加载springmvc--dispatcherServlert
+ * 因为同一个项目存在多个Tomcat时，为了防止读取出错，需要注释掉 extends AbstractAnnotationConfigDispatcherServletInitializer
+ * 防止初始化出错，导致无法启动tomcat
  */
-public class SpittrWebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
+public class SpittrWebAppInitializer
+//        extends AbstractAnnotationConfigDispatcherServletInitializer
+{
     /**
      * 加载根配置信息 spring核心
      */
-    @Override
     protected Class<?>[] getRootConfigClasses() {
         return new Class[]{RootConfig.class};
     }
@@ -17,7 +20,6 @@ public class SpittrWebAppInitializer extends AbstractAnnotationConfigDispatcherS
     /**
      * springmvc加载配置信息
      */
-    @Override
     protected Class<?>[] getServletConfigClasses() {
         return new Class[]{WebConfig.class};
     }
@@ -25,7 +27,6 @@ public class SpittrWebAppInitializer extends AbstractAnnotationConfigDispatcherS
     /**
      *  springmvc 拦截url映射 拦截所有请求
      */
-    @Override
     protected String[] getServletMappings() {
         return new String[]{"/"};//拦截所有请求
     }

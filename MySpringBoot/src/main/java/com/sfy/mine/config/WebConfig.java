@@ -22,7 +22,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     @Bean
     public ViewResolver viewResolver(){
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-        viewResolver.setPrefix("/WEB-INF/views/");
+        viewResolver.setPrefix("/webapp/WEB-INF/views/");
         viewResolver.setSuffix(".jsp");
         // 可以在页面上通过${}访问beans
         viewResolver.setExposeContextBeansAsAttributes(true);
