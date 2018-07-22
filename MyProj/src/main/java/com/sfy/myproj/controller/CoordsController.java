@@ -19,17 +19,14 @@ public class CoordsController {
     @Autowired
     private CoordsServiceImpl coordsService;
 
-    @ResponseBody
-    @RequestMapping("list")
-    public String list(){
-        List<Coords> pztZrqJbs = coordsService.findBySsxq("330206081");
-        Gson gson = new Gson();
-        return "success:" + gson.toJson(pztZrqJbs);
+    @RequestMapping("/")
+    public String index(){
+        return "redirect:/show";
     }
 
     @RequestMapping("show{path}")
     public String showChina(@PathVariable String path, Model model){
-        return "show"+path;
+        return "show" + path;
     }
 
     @ResponseBody

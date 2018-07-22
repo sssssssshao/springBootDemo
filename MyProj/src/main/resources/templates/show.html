@@ -29,7 +29,8 @@
             {name: '沙田', value: 172},
             {name: '西贡', value: 368},
             {name: '离岛', value: 506}
-        ];
+        ],
+        title = "数据中心";
 
     var dom = document.getElementById("container");
     var myChart = echarts.init(dom);
@@ -69,8 +70,11 @@
         myChart.setOption(option = {
             backgroundColor: '#404a59',
             title: {
-                text: '香港18区人口密度 （2011）',
-                subtext: '人口密度数据来自Wikipedia',
+                text: title,
+                // subtext: '人口密度数据来自Wikipedia',
+                textStyle:{
+                    color: '#fff'
+                }
             },
             tooltip: {
                 trigger: 'item',
