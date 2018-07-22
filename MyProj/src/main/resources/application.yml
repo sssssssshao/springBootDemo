@@ -1,0 +1,21 @@
+spring:
+  datasource:
+#    driver-class-name: oracle.jdbc.driver.OracleDriver
+#    url: jdbc:oracle:thin:@localhost:1521:orcl
+#    username: pz2010
+#    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/sfy?characterEncoding=UTF-8
+    url: jdbc:mysql://127.0.0.1:3306/sfy?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
+    username: sfy
+    password: 123456
+  thymeleaf:
+    mode: HTML5
+    cache: false
+  jpa:
+      database: MYSQL
+      hibernate:
+           naming:
+              physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl  # 更改jpa映射mysql表中列名的命名规则
+server:
+  port: 8080
