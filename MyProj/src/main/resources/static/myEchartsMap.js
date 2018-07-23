@@ -1,5 +1,5 @@
 var myMap = (function(){
-    var title = "数据中心",
+    var title = '数据中心',
         scatterOption = [],
         legendNameArray = [],
         legendDataJson = {},
@@ -94,7 +94,7 @@ var myMap = (function(){
     }
 
     return {
-        init(dom, title) {
+        init(dom) {
             var myChart = echarts.init(dom);
             myChart.showLoading();
 
@@ -116,7 +116,7 @@ var myMap = (function(){
                 myChart.setOption(option = {
                     backgroundColor: '#0a173a',
                     title: {
-                        text: '数据中心',
+                        text: title,
                         subtext: '数据来自一标三实',
                         textStyle: {
                             color: '#fff'
