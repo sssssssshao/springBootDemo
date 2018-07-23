@@ -55,7 +55,7 @@ public class FeatureCollection {
         Map<String, List<String>> jsonListMap = new HashMap<>();
         Map<String, String> cpMap = new HashMap<>();
         for (Coords coords : coordsList) {
-            String name = coords.getChinaName();
+            String name = coords.getName();
             List<String> jsonList = new ArrayList<>();
             if (!cpMap.containsKey(name)) {
                 if (!StringUtils.isEmpty(coords.getCp())) {

@@ -141,7 +141,7 @@
         },
         tooltip: {
             trigger: 'item',
-            formatter: function(params) {
+            formatter: function(params) {console.log(params);
                 if (typeof(params.value)[2] == "undefined") {
                     var toolTiphtml = ''
                     for(var i = 0;i<toolTipData.length;i++){
@@ -324,37 +324,37 @@
                 zlevel: 6,
                 data: convertData(data,'点'),
             },
-            // {
-            //     name: 'Top 5',
-            //     type: 'effectScatter',
-            //     coordinateSystem: 'geo',
-            //     data: convertData(data.sort(function(a, b) {
-            //         return b.value - a.value;
-            //     }).slice(0, 5)),
-            //     symbolSize: function(val) {
-            //         return val[2] / 10;
-            //     },
-            //     showEffectOn: 'render',
-            //     rippleEffect: {
-            //         brushType: 'stroke'
-            //     },
-            //     hoverAnimation: true,
-            //     label: {
-            //         normal: {
-            //             formatter: '{b}',
-            //             position: 'right',
-            //             show: true
-            //         }
-            //     },
-            //     itemStyle: {
-            //         normal: {
-            //             color: 'yellow',
-            //             shadowBlur: 10,
-            //             shadowColor: 'yellow'
-            //         }
-            //     },
-            //     zlevel: 1
-            // },
+            {
+                name: 'Top 5',
+                type: 'effectScatter',
+                coordinateSystem: 'geo',
+                data: convertData(data.sort(function(a, b) {
+                    return b.value - a.value;
+                }).slice(0, 5)),
+                symbolSize: function(val) {
+                    return val[2] / 10;
+                },
+                showEffectOn: 'render',
+                rippleEffect: {
+                    brushType: 'stroke'
+                },
+                hoverAnimation: true,
+                label: {
+                    normal: {
+                        formatter: '{b}',
+                        position: 'right',
+                        show: true
+                    }
+                },
+                itemStyle: {
+                    normal: {
+                        color: 'yellow',
+                        shadowBlur: 10,
+                        shadowColor: 'yellow'
+                    }
+                },
+                zlevel: 1
+            },
 
         ]
     };
