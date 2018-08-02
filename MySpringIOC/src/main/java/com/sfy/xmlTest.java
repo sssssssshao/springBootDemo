@@ -1,7 +1,7 @@
 package com.sfy;
 
 import com.sfy.service.UserService;
-import com.sfy.xml.spring.MyClassPathXmlApplicationContext;
+import com.sfy.xml.MyClassPathXmlApplicationContext;
 
 public class xmlTest {
 

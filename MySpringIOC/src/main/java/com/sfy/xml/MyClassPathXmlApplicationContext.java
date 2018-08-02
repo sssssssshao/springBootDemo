@@ -1,4 +1,4 @@
-package com.sfy.xml.spring;
+package com.sfy.xml;
 
 import org.apache.commons.lang.StringUtils;
 import org.dom4j.Attribute;
