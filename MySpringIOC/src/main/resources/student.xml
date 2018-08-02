@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+	<student1 id="001">
+		<微信公众号>201808011924</微信公众号>
+		<学号>20180801</学号>
+	</student1>
+	<student2 id="002">
+		<微信公众号>201808021924</微信公众号>
+		<学号>20180802</学号>
+	</student2>
+</students>  
